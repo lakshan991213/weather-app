@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="7dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="10dp"
+    android:background="@android:color/transparent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_background"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/idIVIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            android:padding="2dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:weightSum="2"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/idTVDate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:text="Day"/>
+            <TextView
+                android:id="@+id/idTVCondition"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:text="condition"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/idTVTemperature"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_weight="1.5"
+            android:text="21.00"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textSize="25dp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
